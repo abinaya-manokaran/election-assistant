@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Election Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>🗳️ Election Assistant</h1>
+    <p>Understand elections in a simple way</p>
+  </div>
+
+  <!-- Chat Area -->
+  <div id="chatBox" class="chat-box"></div>
+
+  <!-- Quick Buttons -->
+  <div class="quick-actions">
+    <button onclick="quickReply('voting')">Voting</button>
+    <button onclick="quickReply('registration')">Registration</button>
+    <button onclick="quickReply('timeline')">Timeline</button>
+    <button onclick="quickReply('eligibility')">Eligibility</button>
+  </div>
+
+  <!-- Input -->
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Ask anything about elections...">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
